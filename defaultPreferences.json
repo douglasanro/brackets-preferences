@@ -1,19 +1,157 @@
 /*
- * Isso é um arquivo de somente leitura contendo as preferências suportadas
- * pelo Brackets.
- * Utilize este arquivo como referência para ajustar e modificar suas preferências no
- * arquivo "brackets.json" aberto em outro painel.
- * Para saber mais sobre como usar as preferências do
- * Brackets, pode consultar a página web https://github.com/adobe/brackets/wiki/How-to-Use-Brackets#preferences
+ * This is a read-only file with the preferences supported
+ * by Brackets.
+ * Use this file as a reference to modify your preferences
+ * file "brackets.json" opened in the other pane.
+ * For more information on how to use preferences inside
+ * Brackets, refer to the web page at https://github.com/adobe/brackets/wiki/How-to-Use-Brackets#preferences
  */
 
 {
+	// External Beautifiers, see https://github.com/brackets-beautify/brackets-beautify#external-formatters
+	"bb.beautify.beautifiers": {},
+
+	// true to hide the dialog warning about unsupported languages
+	"bb.beautify.hideDialog": false,
+
+	// Beautifier-Language-Mapping, see https://github.com/brackets-beautify/brackets-beautify#configure-languages
+	"bb.beautify.languages": {
+		// Default: css
+		"css": "css",
+
+		// Default: html
+		"ejs": "html",
+
+		// Default: html
+		"handlebars": "html",
+
+		// Default: html
+		"html": "html",
+
+		// Default: js
+		"javascript": "js",
+
+		// Default: js
+		"json": "js",
+
+		// Default: js
+		"jsx": "js",
+
+		// Default: css
+		"less": "css",
+
+		// Default: html
+		"php": "html",
+
+		// Default: css
+		"scss": "css",
+
+		// Default: html
+		"svg": "html",
+
+		// Default: html
+		"vue": "html",
+
+		// Default: html
+		"xml": "html"
+	},
+
+	// true to Beautify file on Save
+	"bb.beautify.onSave": false,
+
+	// Default: true
+	"brackets-git.addEndlineToTheEndOfFile": true,
+
+	// Default: AVATAR_COLOR
+	"brackets-git.avatarType": "AVATAR_COLOR",
+
+	"brackets-git.bashShortcut": {},
+
+	// Default: false
+	"brackets-git.clearWhitespaceOnSave": false,
+
+	"brackets-git.commitAllShortcut": {},
+
+	"brackets-git.commitCurrentShortcut": {},
+
+	"brackets-git.dateFormat": {},
+
+	// Default: 1
+	"brackets-git.dateMode": 1,
+
+	// Default: false
+	"brackets-git.debugMode": false,
+
+	// Default: false
+	"brackets-git.enableAdvancedFeatures": false,
+
+	// Default: false
+	"brackets-git.gerritPushref": false,
+
+	// Default: 
+	"brackets-git.gitPath": "",
+
+	// Default: 30
+	"brackets-git.gitTimeout": 30,
+
+	"brackets-git.gotoNextChangeShortcut": {},
+
+	"brackets-git.gotoPrevChangeShortcut": {},
+
+	// Default: true
+	"brackets-git.markModifiedInTree": true,
+
+	// Default: false
+	"brackets-git.normalizeLineEndings": false,
+
+	// Default: Ctrl-Alt-G
+	"brackets-git.panelShortcut": "Ctrl-Alt-G",
+
+	"brackets-git.pullShortcut": {},
+
+	"brackets-git.pushShortcut": {},
+
+	"brackets-git.refreshShortcut": {},
+
+	// Default: false
+	"brackets-git.removeByteOrderMark": false,
+
+	// Default: true
+	"brackets-git.showBashButton": true,
+
+	// Default: false
+	"brackets-git.showTerminalIcon": false,
+
+	// Default: true
+	"brackets-git.stripWhitespaceFromCommits": true,
+
+	// Default: 
+	"brackets-git.terminalCommand": "",
+
+	// Default: 
+	"brackets-git.terminalCommandArgs": "",
+
+	// Default: true
+	"brackets-git.useCodeInspection": true,
+
+	// Default: false
+	"brackets-git.useDifftool": false,
+
+	// Default: false
+	"brackets-git.useGitFtp": false,
+
+	// Default: true
+	"brackets-git.useGitGutter": true,
+
+	// Default: false
+	"brackets-git.useVerboseDiff": false,
+
 	"brackets-icons.icons": {},
 
-	// Padrão: ionicons
+	// Default: ionicons
 	"brackets-icons.iconset": "ionicons",
 
-	// Padrão: true
+	// Default: true
 	"brackets-icons.secondary": true,
 
 	// If the value of this preference is true, Indent Guides will be visible. If the value is false, Indent Guides will be hidden.
@@ -28,239 +166,274 @@
 	// If the value of this preference is true the first Indent Guide will not be drawn.
 	"brackets-indent-guides.hideFirst": false,
 
-	// verdadeiro (true) para fechar chaves, colchetes e parênteses automáticamente
+	// true to automatically close braces, brackets and parentheses
 	"closeBrackets": true,
 
-	// falso (false) para remover  "Fechar outros acima" do menu de contexto Arquivos abertos
+	// false to remove the "Close Others Above" from the Working Files context menu
 	"closeOthers.above": true,
 
-	// falso (false) para remover "Fechar outros abaixo" do menu de contexto Arquivos abertos
+	// false to remove the "Close Others Below" from the Working Files context menu
 	"closeOthers.below": true,
 
-	// falso (false) para remover "Fechar outros" do menu de contexto Arquivos abertos
+	// false to remove the "Close Others" from the Working Files context menu
 	"closeOthers.others": true,
 
-	// Definir opções de fechamento de tags
+	// Sets the tag closing options
 	"closeTags": {
-		// Uma matriz de tags não deve ser automáticamente fechada
+		// An array of tags that should not be auto-closed
 		"dontCloseTags": [],
 
-		// Um vetor de tags terá uma linha em branco entre as tags quando for aberta
+		// An array of tags that when opened has a blank line
 		"indentTags": [],
 
-		// Fechar / quando o fechamento da tag for digitada
+		// Close when / of closing tag is typed
 		"whenClosing": true,
 
-		// Fechar > quando a abertura da tag for digitada
+		// Close when > of opening tag is typed
 		"whenOpening": true
 	},
 
-	// verdadeiro (true) para sempre gerar marcadores de agrupamento quando o nível de identação mudar
+	// true to always generate collapsible section markers when indent level changes
 	"code-folding.alwaysUseIndentFold": false,
 
-	// verdadeiro (true) para habilitar o agrupamento de código
+	// true to enable code folding
 	"code-folding.enabled": true,
 
-	// verdadeiro (true) para fazer que os marcadores de agrupamento de seção visíveis somente quando o cursor sai da área de edição pelo painel da esquerda
+	// true to make Section-collapsing markers visible only when you move the mouse over the gutter
 	"code-folding.hideUntilMouseover": false,
 
 	// true to enable code folding on selected text in the editor
 	"code-folding.makeSelectionsFoldable": true,
 
-	// Limite de quantos níveis de Agrupar Todos pode agrupar
+	// Limits how many levels deep Collapse All applies
 	"code-folding.maxFoldLevel": 2,
 
-	// Mínimo de linhas antes de um ícone agrupamento de seção surgir
+	// Minimum lines before a collapsible section icon appears
 	"code-folding.minFoldSize": 2,
 
-	// verdadeiro (true) para lembrar o estado de uma seção agrupada caso você feche e reabra um arquivo ou projeto
+	// true to remember collapsed sections if you close and reopen a file or project
 	"code-folding.saveFoldStates": true,
 
-	// Habilitar/Desabilitar as sugestões de atributos HTML
+	// Enable/disable HTML attribute hints
 	"codehint.AttrHints": true,
 
-	// Habilitar/Desabilitar as sugestões de atributos CSS/LESS/SCSS
+	// Enable/disable CSS/LESS/SCSS property hints
 	"codehint.CssPropHints": true,
 
-	// Habilitar/Desabilitar as sugestões de atributos JavaScript
+	// Enable/disable JavaScript code hints
 	"codehint.JSHints": true,
 
-	// Habilitar/Desabilitar as sugestões de preferências de código
+	// Enable/disable Preferences code hints
 	"codehint.PrefHints": true,
 
-	// Habilitar/Desabilitar as sugestões de código SVG
+	// Enable/disable SVG code hints
 	"codehint.SVGHints": true,
 
-	// Habilitar/Desabilitar as sugestões de entidades HTML
+	// Enable/disable HTML entity hints
 	"codehint.SpecialCharHints": true,
 
-	// Habilitar/Desabilitar as sugestões de tags HTML
+	// Enable/disable HTML tag hints
 	"codehint.TagHints": true,
 
-	// Habilitar/Desabilitar as sugestões URL dentro de HTML & CSS/LESS/SCSS
+	// Enable/disable URL hints in HTML & CSS/LESS/SCSS
 	"codehint.UrlCodeHints": true,
 
-	// verdadeiro (true) para mostrar os erros na barra de status
+	// true to show errors in status bar
 	"debug.showErrorsInStatusBar": false,
 
-	// Habilitar/Desabilitar funcionalidade Drag & Drop/Arrastar & Soltar
+	// Default: true
+	"denniskehrig.ShowWhitespace.checked": true,
+
+	// Enable/disable Drag & Drop functionality
 	"dragDropText": false,
 
-	// verdadeiro (true) para habilitar busca instantânea
+	// Sort Extensions using downloadCount or publishedDate
+	"extensions.sort": "publishedDate",
+
+	// true to enable instant search
 	"findInFiles.instantSearch": true,
 
-	// verdadeiro (true) para habilitar a búsca baseada em nós/node
+	// true to enable node based search
 	"findInFiles.nodeSearch": true,
 
-	// Alterar fonte
+	// Change font family
 	"fonts.fontFamily": "'SourceCodePro-Medium', ＭＳ ゴシック, 'MS Gothic', monospace",
 
-	// Alterar o tamanho da fonte; e.g. 13px
+	// Change font size; e.g. 13px
 	"fonts.fontSize": "12px",
 
-	// Somente para Mac: "subpixel-antialiased" para habilitar sub-pixel antialiasing ou "antialiased" para gray scale antialiasing / antialiasing com escala de cinza
+	// Mac-only: "subpixel-antialiased" to enable sub-pixel antialiasing or "antialiased" for gray scale antialiasing
 	"fonts.fontSmoothing": "subpixel-antialiased",
 
-	// Habilitar rastreamento de dados de saúde
+	// Enable the Health Data Tracking
 	"healthData.healthDataTracking": true,
 
-	// Habilitar highlighting automático de palavras ao longo do documento
+	// Enables automatic highlighting of matching strings throughout the document
 	"highlightMatches": false,
+
+	// Show/hide function parameters and HTML classes in the Outline List
+	"hirse.outline.args": true,
+
+	// Enable/disable Outline List
+	"hirse.outline.enabled": false,
+
+	// True to indent the entries in the Outline List
+	"hirse.outline.indent": true,
+
+	// True to show the Outline List in the Sidebar below the file tree
+	"hirse.outline.sidebar": true,
+
+	// True to sort the entries in the Outline List
+	"hirse.outline.sort": false,
+
+	// Show/hide unnamed functions in the Outline List
+	"hirse.outline.unnamed": true,
 
 	// true to enable indenting of line comments
 	"indentLineComment": false,
 
-	// verdadeiro (true) para inserir a sugestão de código ao pressionar tab
+	// true to insert the currently selected code hint on tab
 	"insertHintOnTab": false,
 
-	// Uma lista de arquivos que foram detectados problemas fazem o Tern não funcionar corretamente
+	// A list of files that have been detected to cause Tern to run out of control
 	"jscodehints.detectedExclusions": [],
 
-	// Quantidade de vezes que o Tern deixará de tentar de compreender os arquivos
+	// The amount of time after which Tern will time out when trying to understand files
 	"jscodehints.inferenceTimeout": 30000,
 
-	// verdadeiro (true) para não mostrar automáticamente dicas para JS quando  . for digitado
+	// true to not automatically show JS code hints when . is typed
 	"jscodehints.noHintsOnDot": false,
 
 	// Enable/disable datatype details in JavaScript code hints
 	"jscodehints.typedetails": true,
 
-	// Um objeto com valores padrões para JSLint
+	// An object with the default options for JSLint
 	"jslint.options": {
-		// verdadeiro (true) para permitir expressões de atribuição
+		// true to allow assignment expressions
 		"ass": false,
 
-		// verdadeiro (true) para permitir operadores bitwise
+		// true to allow bitwise operators
 		"bitwise": false,
 
-		// verdadeiro (true) se as funçõesvariáveis globais do navegador devem ser predefinidos
+		// true if standard browser globals should be predefined
 		"browser": false,
 
-		// verdadeiro (true) para permitir expressões idiomáticas do Google Closure
+		// true to allow Google Closure idioms
 		"closure": false,
 
-		// verdadeiro (true) para permitir a declaração  "continue"
+		// true to allow "continue" statement
 		"continue": false,
 
-		// verdadeiro (true) se as funções/variáveis globais do CouchDB devem ser predefinidos
+		// true if CouchDB globals should be predefined
 		"couch": false,
 
-		// verdadeiro (true) para permitir as declarações do debugger
+		// true to allow debugger statements
 		"debug": false,
 
-		// verdadeiro (true) se as funções/variáveis globais de desenvolvimento no navegador devem ser predefinidos
+		// true if browser globals useful in development should be predefined
 		"devel": false,
 
-		// verdadeiro (true) para permitir == e !=
+		// true to allow == and !=
 		"eqeq": false,
 
-		// verdadeiro (true) se as funções/variáveis globais ES6 devem ser predefinidos
+		// true if ES6 globals should be predefined
 		"es6": false,
 
-		// verdadeiro (true) para permitir eval
+		// true to allow eval
 		"evil": false,
 
-		// verdadeiro (true) para permitir "for ... in" não filtrados
+		// true to allow unfiltered "for ... in"
 		"forin": false,
 
-		// Designar uma largura identação específica para o tab
+		// Set a specific tab width
 		"indent": 0,
 
-		// Número máximo de advertências reportadas
+		// The maximum number of warnings reported
 		"maxerr": 0,
 
-		// Número máximo de caracteres por linha
+		// The maximum number of characters in a line
 		"maxlen": 0,
 
-		// verdadeiro (true) para permitir construtores não capitalizados/sem maiúsculas
+		// true to allow uncapitalized constructors
 		"newcap": false,
 
-		// verdadeiro (true) se as funções/variáveis globais do NodeJS devem ser predefinidos
+		// true if Node.js globals should be predefined
 		"node": false,
 
-		// verdadeiro (true) para permitir sublinhados a frente dos identificadores
+		// true to allow dangling underscore in identifiers
 		"nomen": false,
 
-		// verdadeiro (true) para para no primeiro erro
+		// true to stop on first error
 		"passfail": false,
 
-		// verdadeiro (true) para permitir ++ e --
+		// true to allow ++ and --
 		"plusplus": false,
 
-		// verdadeiro (true) para permitir . e [^...]. em RegExp
+		// true to allow . and [^...]. in RegExp
 		"regexp": false,
 
-		// verdadeiro (true) se as funções/variáveis globais Rhino devem ser predefinidos
+		// true if Rhino globals should be predefined
 		"rhino": false,
 
-		// verdadeiro (true) para permitir que não haja `use strict` pragma
+		// true to allow missing `use strict` pragma
 		"sloppy": false,
 
-		// verdadeiro (true) se os métodos de bloqueio ('...Sync') podem ser usados.
+		// true if blocking ('...Sync') methods can be used.
 		"stupid": false,
 
-		// verdadeiro (true) para permitir subíndices ineficientes
+		// true to allow inefficient subscripting
 		"sub": false,
 
-		// verdadeiro (true) para permitir comentários TODO
+		// true to allow TODO comments
 		"todo": false,
 
-		// verdadeiro (true) para permitir parâmetros nunca usados
+		// true to allow unused parameters
 		"unparam": false,
 
-		// verdadeiro (true) para permitir mais de 1 variável em uma função
+		// true to allow more than 1 vars in a function
 		"vars": false,
 
-		// verdadeiro (true) para ignorar as regras de espaçamento
+		// true to ignore white-space rules
 		"white": false
 	},
 
-	// Mapeamentos adicionais de uma extensão arquivo ao nome da linguagem
+	// Additional mappings from file extension to language name
 	"language.fileExtensions": {},
 
-	// Mapeamentos adicionais de um nome de arquivo ao nome da linguagem
+	// Additional mappings from file name to language name
 	"language.fileNames": {},
 
-	// Tempo em milisegundos para a espera dos inspetores de código assíncronos
+	// Doing copy and cut when there's no selection will copy or cut the whole lines that have cursors in them
+	"lineWiseCopyCut": true,
+
+	// The time in milliseconds after which asynchronous linters time out
 	"linting.asyncTimeout": 10000,
 
-	// verdadeiro (true) para agrupar painel de sugestões
+	// true to collapse linting panel
 	"linting.collapsed": false,
 
-	// verdadeiro (true) para habilitar a inspeção do código
+	// true to enable Code Inspection
 	"linting.enabled": true,
 
-	// Vetores de inspetores de código que executam primeiro
+	// Array of linters to run first
 	"linting.prefer": [],
 
-	// verdadeiro (true) para executar somente os provedores especificados pelo linting.prefer
+	// true to run providers specified in linting.prefer only
 	"linting.usePreferredOnly": false,
 
-	// verdadeiro (true) para habilitar o Live Preview experimental
+	// true to enable experimental Live Preview
 	"livedev.multibrowser": false,
 
-	// Máximo de sugestões de códigos exibidos ao mesmo tempo
+	// Port on which WebSocket Server runs for Live Preview
+	"livedev.wsPort": 8125,
+
+	// Maximum code hints displayed at once
 	"maxCodeHints": 50,
+
+	// Default: false
+	"mikaeljorhult.bracketsTodo.enabled": false,
+
+	"mikaeljorhult.bracketsTodo.userSettings": {},
 
 	// true to enable code only mode and hide all other UI elements in Brackets
 	"noDistractions": false,
@@ -271,69 +444,69 @@
 	// Toggle when to show the close and flip-view buttons on the header.
 	"pane.showPaneHeaderButtons": "hover",
 
-	// falso (false) para desabilitar a abertura do arquivo de preferências em tela dividida
+	// false to disable opening preferences file in split view
 	"preferencesView.openPrefsInSplitView": true,
 
-	// falso (false) para desabilitar a abertura do arquivo de preferências no topo do painel lateral esquerdo
+	// false to open user preferences file in left/top pane
 	"preferencesView.openUserPrefsInSecondPane": true,
 
-	// A URL do proxy utilizado para a instalação das extensões
+	// The URL of the proxy server used for extension installation
 	"proxy": "",
 
-	// verdadeiro (true) pra habilitar  Visualização Rápida/Quick View
+	// true to enable Quick View
 	"quickview.enabled": true,
 
-	// verdadeiro (true) para mostrar uma prévia de imagem para URLs sem extensões
+	// true to show image previews for URLs missing extensions
 	"quickview.extensionlessImagePreview": true,
 
 	// Enable/disable navigation in recent files
 	"recent-files.navigation": true,
 
-	// verdadeiro (true) para habilitar o scrolling após o fim do arquivo
+	// true to enable scrolling beyond the end of the document
 	"scrollPastEnd": false,
 
-	// falso (false) para desabilitar todos as sugestões de código
+	// false to disable all code hints
 	"showCodeHints": true,
 
-	// Mantenha o cursor visível quando houver uma seleção de texto
+	// Keeps the blinking cursor visible when you have a text selection
 	"showCursorWhenSelecting": false,
 
-	// verdadeiro (true) para mostrar o número das linhas na borda "gutter" as esquerda do editor
+	// true to show line numbers in a “gutter” to the left of the code
 	"showLineNumbers": true,
 
-	// Identar automáticamente quando se criar um novo bloco
+	// Automatically indent when creating a new block
 	"smartIndent": true,
 
-	// falso (false) para desabilitar o comportamento de "soft tabs"
+	// false to turn off soft tabs behavior
 	"softTabs": true,
 
-	// verdadeiro (true) para ordenar os diretórios no topo da árvore de projetos
+	// true to sort the directories first in the project tree
 	"sortDirectoriesFirst": false,
 
-	// Quantidade de espaços utilizados na identações baseada em espaços
+	// Number of spaces to use for space-based indentation
 	"spaceUnits": 4,
 
-	// Número da porta do servidor que será utilizada para o Live Preview
+	// Port number that the built-in server should use for Live Preview
 	"staticserver.port": 0,
 
-	// verdadeiro (true) para ressaltar a linha atual que o cursor se encontra
+	// true to highlight background color of the line the cursor is on
 	"styleActiveLine": false,
 
-	// Quantidade de espaços utilizados pelo tab
+	// Number of spaces to display for tabs
 	"tabSize": 4,
 
-	// Selecionar um tema para Brackets
+	// Select a Brackets theme
 	"themes.theme": "light-theme",
 
-	// verdadeiro (true) para permitir barras de rolagem customizadas
+	// true to allow custom scroll bars
 	"themes.themeScrollbars": true,
 
-	// verdadeiro (true) para gerar cores utilizando hexadecimais maiúsculas no editor de cores
+	// true to generate uppercase hex colors in Inline Color Editor
 	"uppercaseColors": false,
 
-	// verdadeiro (true) para usar tabs ao invés de espaços
+	// true to use tabs instead of spaces
 	"useTabChar": false,
 
-	// Ajustar linhas que ultrapassam a largura do editor
+	// Wrap lines that exceed the viewport width
 	"wordWrap": true
 }
